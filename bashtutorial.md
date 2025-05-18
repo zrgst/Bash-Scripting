@@ -11,8 +11,9 @@ edit the previous line. Then you would have to open it in a text-editor to fix m
 In your terminal navigate to the folder where you want your script to be stored.
 Use the following command to start making your script:
 
-> cat > yourscriptname.sh
-
+```bash
+cat > yourscriptname.sh
+```
 the line below your command will be your tex editor. so there you will enter your script commands.
 
 If you make a mistake one one of the lines and need to start over, use the shortcut "Ctrl-c" to Return to your terminal,  nothing will be saved and you can run the command again to make your script.
@@ -21,12 +22,25 @@ First we need to define the interpreter for the script.
 
 int the first line of you script you will Write the following line:
 
-> #!/bin/bash
+```bash
+#!/bin/bash
+```
 
 this tells your computer that this script wil be interpreted by the bash interpreter.
+
+
+```bash
+#!/bin/bash
+echo "Today is:"
+cal
+date
+exit
+```
 
 link to the video:
 https://youtu.be/KG97VzMjfMg?si=6nqJUYCVcVi0niBs&t=655
 
+
+if you creat a bin folder in yout home directory and rebbot the system, it will automatically be added to your $PATH . if this does not work the solution is in the end of the video.
 
 
