@@ -28,6 +28,9 @@ int the first line of you script you will Write the following line:
 
 this tells your computer that this script wil be interpreted by the bash interpreter.
 
+After this you can add the actual script. In the example from the video he makes a calendar script that shows a calendar fo the current month and teh current date and time.
+
+Here is the entire script:
 
 ```bash
 #!/bin/bash
@@ -36,6 +39,28 @@ cal
 date
 exit
 ```
+
+If you try to run the script now it wil not run. first you need to change permissions on the file.
+This can be done with the "chmod" command:
+
+```bash
+chmod 755 today.sh
+
+```
+or
+
+```bash
+chmod +x today.sh
+```
+
+now the script will run. but not by just writing the name in the terminal. The new script is not in your $SOURCES yet.
+To run it now you have to use this command:
+
+```
+./today.sh
+```
+
+Congratulations, you have now made your first script. Later we will explore how to add it to your sources so it can be run woth a single word command like all the other bash commands we use every day!
 
 link to the video:
 https://youtu.be/KG97VzMjfMg?si=6nqJUYCVcVi0niBs&t=655
